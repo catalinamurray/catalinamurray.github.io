@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo.jpg" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <h1 class = "title"> CAD Projects </h1>
+        <br>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row">
+                <div class= "CAD-col-1">
+                <p> Using Fusion 360, Creo Parametric, and Solid Works to create a wide variety of CAD models and engineering drawings. 3D printed in PLA and ABS which has given me hands-on experience with 3D printing techniques and best practices. </p>
+                <br>
+                <p> I created some videos as well to show the more complex CAD models I created using gears. This included a fishing reel and a motor. </p>
+                <a href="CAD_Links/finshing_reel_movie.mp4" class="btn"> Fishing Reel Video </a>
+                <a href="CAD_Links/motor_movie.mp4" class="btn"> Motor Video </a>
+                <p> Below I have included some example images of my CAD models, 3D prints, and engineering drawings. </p>
+            </div>
+                <div class = "CAD-col-2">
+                <img src = "imgs/CAD/CAD.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Slideshow container -->
+<div class="slideshow-container2">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 12</div>
+      <img src="imgs/CAD/CAD_diagrams/17.png" style="width:100%">
+      <div class="text2">Created cup holder to fit my hrydroflask. Created in fusion and 3D printed in PLA.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 12</div>
+        <img src="imgs/CAD/cup_holder_drawing.jpg" style="width:100%">
+        <div class="text2">Created Engineering drawing for cup holder.</div>
+      </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 12</div>
+      <img src="imgs/CAD/CAD_diagrams/18.png" style="width:100%">
+      <div class="text2">Created mount to fit motor shaft to longtail shaft of the boat. Machined using aluminum block, lathe and some other machining equipment.</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 12</div>
+      <img src="imgs/CAD/CAD_diagrams/19.png" style="width:100%">
+      <div class="text2">Created a model of the full boat for prototyping. This included the hull, propeller, batteries, and motor. Sized appropriatley and printed using PLA.</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 12</div>
+        <img src="imgs/CAD/CAD_diagrams/20.png" style="width:100%">
+        <div class="text2">3D printed model along side boat after it was built.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="imgs/CAD/CAD_diagrams/21.png" style="width:100%">
+        <div class="text2">Created a 3D model for a motor mount. This helped us machine the parts we needed for the motor mount which we evetually cut out of metal and welded together. </div>
+      </div>
+  
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 12</div>
+        <img src="imgs/CAD/CAD_diagrams/22.png" style="width:100%">
+        <div class="text2">Part of the motor mount which was laser cut. </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 12</div>
+        <img src="imgs/CAD/CAD_diagrams/coupon/23.png" style="width:100%">
+        <div class="text2">Created a coupon holder design to better hold biological pieces. </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 12</div>
+        <img src="imgs/CAD/CAD_diagrams/coupon/24.png" style="width:100%">
+        <div class="text2">Close up of the functionality of the coupon holder. Created in Creo Parametric.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 12</div>
+        <img src="imgs/CAD/IMG_4281.jpg" style="width:100%">
+        <div class="text2">3D printed holder with specific measurements to fit other 3D printed object.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 12</div>
+        <img src="imgs/CAD/FishingReel.jpg" style="width:100%">
+        <div class="text2">Image of fishing reel fully assembled. This was also 3D printed and fully functional with the gears.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 12</div>
+        <img src="imgs/CAD/engineering_drawing.jpg" style="width:100%">
+        <div class="text2">An example of another 3D drawing made for a CAD model using fusion 360.</div>
+      </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+  
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  

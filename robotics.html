@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo.jpg" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <h1 class = "title"> Robotics Projects </h1>
+        <br>
+        <div class = "container">
+            <div class = "row">
+                <div class= "T4-col-1">
+                <h1 class = "ML-sub-title"> TURTLEBOT4 </h1>
+                <br>
+                <p> Utilized NAV2 and SLAM to do autonomous mapping with the the Turtlebot4 robot. I also created a tutorial as an introduction into this method. I also used some other ROS2 functions to do wall following and other commands.</p>
+                <br>
+                <a href="robot_links/Turtlebot4_report.pdf" class="btn"> tutorial </a>
+                </div>
+                <div class = "T4-col-2">
+                <img src = "imgs/robotics/robot_diagram.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row">
+                <div class= "Romi-col-1">
+                <h1 class = "ML-sub-title"> ROMI robot </h1>
+                <br>
+                <p> Built the Romi robot with the Romi 32U4 Control Board, LEDs, accelerometers, gyroscopes, buzzer, and LED screen. Utilized the ROMI robot and PlatformIO to create various wall following, line following and obstacle avoidance commands. Eventually created a script for the robot to follow a specific path using these commands. </p>
+                <a href="robot_links/romi_line_follow.MP4" class="btn"> Line following </a>
+                <a href="robot_links/intersection.mp4" class="btn"> crossing an intersection </a>
+                </div>
+                <div class = "Romi-col-2">
+                <br>
+                <img src = "imgs/robotics/romi.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row">
+                <div class= "UR-col-1">
+                    <h1 class = "ML-sub-title"> Underwater Robots </h1>
+                    <br>
+                    <p> Utilized the Blue Robotics ROV2 for various applications. Deployed it in the lab tank to better understand how the robot functions. Utilized the BlueRobotics Ping Echosounder and Altimeter as a sonar to map the tank. </p>
+                </div>
+                <div class = "UR-col-2">
+                    <div class="row2"> 
+                        <div class="column2"> 
+                            <img src="imgs/robotics/robot_in_tank.jpg" width= 40%> 
+                            <img src="imgs/robotics/pingviewer1.PNG"> 
+                        </div>
+                        <div class="column2">
+                            <img src="imgs/robotics/pingviewer3.PNG"> 
+                            <img src="imgs/robotics/robot_setup.jpg"> 
+                            <img src="imgs/robotics/pingviewer2.PNG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+       sidemenu.style.right = "0";
+    }
+    function closemenu(){
+       sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</html>

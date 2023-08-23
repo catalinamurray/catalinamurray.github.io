@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo.jpg" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="Projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <h1 class = "title"> Natural Language Processing </h1>
+        <br>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row">
+                <div class= "NLP-col-1">
+                <p> Utilized various NLP tools in a service arcitecture with API endpoints. Used Docker to streamline the services. </p>
+                <br>
+                <p> Due to contractor propritary information I can't share any data or specificties about the project. However the basic struture utilized BERTopic.  </p>
+                <br>
+                <p> The data is in the form of sentences and is preprocessed to remove any unecessary characters. Next the numerical embeddings are created for the data using transformers that keep the semantic meanings of the data. The dimension is then reduced and finall topics are created using a clustering algorithm. To better understand the topics KeyBERT is used to extract the most respresentative and meaningful words from each topic. </p>
+            </div>
+                <div class = "NLP-col-2">
+                <img src = "imgs/NLP/Screenshot 2023-08-22 at 8.56.03 PM.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>

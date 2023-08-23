@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo.jpg" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <h1 class = "title"> Fabric Content Classification Using Computer Vision Techniques</h1>
+        <div class = "container">
+            <div class = "row">
+                <div class = "btn-col-1">
+                    <a href="ML_links/FInal_project_report.pdf" class="btn"> Full Report</a>
+                </div>
+                <div class = "btn-col-2">
+                    <a href="ML_links/Fabric_content.mp4" class="btn"> Presentation </a>
+                </div>
+                <div class = "btn-col-3">
+                    <a href="ML_links/Final_project_presentation.pptx" class="btn"> pptx </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row">
+                <div class= "ML-col-1">
+                <h1 class = "ML-sub-title"> PROJECT DESCRIPTION </h1>
+                <br>
+                <p> One of the main properties of a textile is its composition, a critical piece of information for any garment designer or manufacturer. Fabric content can usually only be determined through extensive testing which is both costly and time-consuming. I proposed a new method that uses computer vision techniques to determine fabric composition with images alone.  </p>
+                
+                </div>
+
+                <div class = "ML-col-2">
+                <img src = "imgs/ML/project_graphic.png" alt="img">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "row"> 
+            <div class = "layout">
+            <h1 class = "ML-sub-title"> THE METHOD AT A GLANCE</h1>
+            <img src = "imgs/ML/PR_diagram.png" alt="img">
+            </div>
+            <div class = "layout-description">
+                <p> The method utilizes Local Binary Patterns and Gray Level Covariance Matrices to extract the textural features of each image. K-nearest neighbors, a non-parametric supervised learning method is then used to classify the images based on content. An evaluation was done on 15 different fabric blends in six different fabric groups, the method achieved accuracy between 89-100%.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row"> 
+                <div class = "Data-col-1">
+                <h1 class = "ML-sub-title"> DATA COLLECTION </h1>
+                <br>
+                    <p> Data was collected from two different fabric stores as well as from various clothing items. An iPhone camera was used to collect all the images. To achieve an adequately trained model images could only be taken of textile types that had multiple content blends as well as multiple fabric samples. Images were collected from 6 different categories of fabric: Denim, Faux Leather, Fleece, Knit, linen, and Outdoor fabric. Each category had 2-3 different fabric content make-ups.  </p>
+                </div>
+                <div class = "Data-col-2">
+                    <img src = "imgs/ML/Data.jpg" alt="img" >  
+                </div>
+                <div class = "Data-col-3">
+                    <img src = "imgs/ML/fabric_layout.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row"> 
+                <div class = "Preprocessing-col-1">
+                <h1 class = "ML-sub-title"> IMAGE PRE-PROCESSING </h1>
+                <br>
+                    <img src = "imgs/ML/Histogram.png" alt="img" > 
+                    
+                </div>
+                <div class = "Preprocessing-col-2">
+                    <p> To enhance the texture of each image images were processed using <span> adaptive histogram equalization.</span> This technique helps improve the local contrast of an image by computing several histograms in each region of the image and redistributing the luminance values.</p> 
+                    <br>
+                    <p> Since Data was limited, the images were also <span> augmented </span> to improve the generalization of the model. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row"> 
+                <div class = "Feature-col-1">
+                <h1 class = "ML-sub-title"> FEATURE EXTRACTION </h1>
+                <br>
+                    <p> Both Local Binary Patterns and Gray Level Co-occurrence matricies were used. <span> LBP </span> is a way to compute a local representation of texture features. To do this the center pixel is compared to the surrounding pixel, a value is then set based on whether the center value is greater than or less than the surroudning value. </p>
+                    <br>
+                    <p> The Gray Level Co-occurrence Matrix <span> (GLCM) </span> is another popular method used to help extract the textural features of an image. Various properties can be calculated using an inputted spatial relationship.</p>
+                </div>
+                <div class = "Feature-col-2">
+                    <img src = "imgs/ML/LBP.png" alt="img" > 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row"> 
+                <div class = "PCA-col-1">
+                <h1 class = "ML-sub-title"> DIMENSIONALITY REDUCTION </h1>
+                <br>
+                <img src = "imgs/ML/PCA.png" alt="img" > 
+                   
+                </div>
+                <div class = "PCA-col-2">
+                    <p> <span> Principal Component Analysis </span> was used to reduce the dimensions and to avoid the curse of dimensionality. Since there is a limited number of images per fabric type there was a strong chance of overfitting. </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row"> 
+                <div class = "Results-col-1">
+                <h1 class = "ML-sub-title"> CLUSTERING & RESULTS </h1>
+                <br>
+                <p> SVM, Logistic Regression, and KNN were all compared as clustering algorithms. The hyperparameters for each model were tuned for the best results. In the end <span> KNN </span> was seen as the most successful clustering algorithm for this data, however it would be interesting to see what the results would be with more data. Other nerual networks like the ResNet 18 were also evaulated but further investigation needs to be done.  </p> 
+                   
+                </div>
+                <div class = "Results-col-2">
+                    <img src = "imgs/ML/results.png" alt="img" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    

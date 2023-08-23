@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo.jpg" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="Projects.html">PROJECTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="Project_description">
+        <h1 class = "title"> MATH SYMBOLS CLASSIFICATION PROJECT </h1>
+        <br>
+    </div>
+
+    <div id="Project_description">
+        <div class = "container">
+            <div class = "row">
+                <div class= "math-col-1">
+                <p> The dataset included over 9000 images of handwritten math charcaters ranging from + to %. In order to classify images based on the symbol they contain we utilized YOLOv5 and Otsu's thresholding to find the bounding boxes of the images and label them. Our model achieved 96% accuracy. </p>
+                <br>
+                <a href="math_links/Machine_Learning_Project.pdf" class="btn"> Full Report </a>
+            </div>
+                <div class = "math-col-2">
+                <img src = "imgs/math_symb/Numbers.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
