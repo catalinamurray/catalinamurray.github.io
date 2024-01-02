@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo2.png" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="./courses.html">COURSEWORK</a></li>
+                    <li class="dropdown">
+                        <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="PR.html">Pattern Recognition</a></li>
+                            <li><a href="ML.html">Machine Learning</a></li>
+                            <li><a href="NLP.html">NLP</a></li>
+                            <li><a href="robotics.html">Robotics</a></li>
+                            <li><a href="CAD.html">CAD</a></li>
+                            <li><a href="boat.html">Electrical/Mechanical</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="project_description">
+        <div class = "container">
+            <h1 class = "project-title"> NATURAL LANGUAGE PROCESSING </h1>
+            <h1 class = "project-title-2"> For The Aerospace Corporation </h1>
+            <br>
+            <div class = "row">
+                <div class= "project-col-1">
+                <h1 class = "project-sub-title"> Topic Modeling </h1>
+                <br>
+                <p> Utilized various NLP tools in a service arcitecture with <span> API endpoints</span>. Used <span> Docker </span> to streamline the services. </p>
+                <br>
+                <p> Due to contractor proprietary information I can't share any data or specificties about the project. However the basic struture utilized <span> BERTopic </span>  </p>
+                <br>
+                <p> The data is in the form of sentences and is preprocessed to remove any unecessary characters. Next the numerical embeddings are created for the data using transformers that keep the semantic meanings of the data. The dimension is then reduced and final topics are created using a clustering algorithm. To better understand the topics <span> KeyBERT </span> is used to extract the most respresentative and meaningful words from each topic. </p>
+            </div>
+                <div class = "project-col-2">
+                <img src = "imgs/NLP_imgs/NLP_outline.jpg" alt="img">
+                <br> 
+                <img src = "imgs/NLP_imgs/NLP_icons.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    
+
+   

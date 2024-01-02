@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo2.png" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="./courses.html">COURSEWORK</a></li>
+                    <li class="dropdown">
+                        <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="PR.html">Pattern Recognition</a></li>
+                            <li><a href="ML.html">Machine Learning</a></li>
+                            <li><a href="NLP.html">NLP</a></li>
+                            <li><a href="robotics.html">Robotics</a></li>
+                            <li><a href="CAD.html">CAD</a></li>
+                            <li><a href="boat.html">Electrical/Mechanical</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="project_description">
+        <div class = "container">
+            <h1 class = "project-title"> ML APPLICATIONS </h1>
+            <br>
+            <div class = "row">
+                <div class= "project-col-1">
+                <h1 class = "project-sub-title"> STACKED AUTOENCODERS </h1>
+                <br>
+                <p> In this study, we examine how effective stacked autoencoder
+                    networks (SAEs) are at pulling out features and classifying data,
+                    especially when it comes to making distinctions in a hidden part
+                    of the network called the latent space. We use the Kuzushiji-
+                    MNIST dataset to compare two methods. First, we look at a
+                    standard SAE with five hidden layers trained using mean squared
+                    error (MSE).
+                    We then investigate the SAE’s robustness to noise by introducing
+                    impulsive noise to the input images and training the SAE
+                    with a correntropy cost function. This approach’s effectiveness
+                    in noise reduction and its impact on classification accuracy is
+                    quantitatively analyzed and compared against the traditional
+                    MSE-based SAE.
+                    In the second part of our research, we propose and implement
+                    a novel penalty function designed to enhance discrimination in
+                    the SAE’s latent space. </p>
+                <a href="imgs/ML/SAE.pdf" class="btn"> Full Report </a>
+                </div>
+                <div class = "project-col-2">
+                <img src = "imgs/ML/SAE.jpg" alt="img">
+                </div>
+
+                <div class= "project-col-1">
+                <h1 class = "project-sub-title"> MLP VS CNN ANALYSIS </h1>
+                <br>
+                <p> This study comprehensively analyzes two prominent
+                        neural network classifiers, the Convolutional Neural Network
+                        (CNN) and the Multi-Layer Perceptron (MLP), in their application
+                        to Japanese character recognition using the Kuzushiji data set. This analysis utilized TensorFlow to implement and train both the MLP and CNN. </p>
+                <a href="imgs/ML/MLP_Vs_CNN.pdf" class="btn"> Full Report </a>
+                </div>
+                <div class = "project-col-2">
+                <img src = "imgs/ML/MLP_vs_CNN.jpg" alt="img">
+                </div>
+
+                <div class= "project-col-1">
+                    <h1 class = "project-sub-title"> MATH SYMBOLS CLASSIFICATION </h1>
+                    <br>
+                    <p> The dataset included over 9000 images of handwritten math characters ranging from + to %, in order to classify images based on the symbol they contain we utilized YOLOv5 and Otsu's thresholding to find the bounding boxes of the images and label them. Our model achieved 96% accuracy. </p>
+                    <a href="math_links/Machine_Learning_Project.pdf" class="btn"> Full Report </a>
+                </div>
+                <div class = "project-col-2">
+                    <img src = "imgs/ML/28.png" alt="img">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>

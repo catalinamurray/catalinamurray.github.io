@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo2.png" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="./courses.html">COURSEWORK</a></li>
+                    <li class="dropdown">
+                        <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="PR.html">Pattern Recognition</a></li>
+                            <li><a href="ML.html">Machine Learning</a></li>
+                            <li><a href="NLP.html">NLP</a></li>
+                            <li><a href="robotics.html">Robotics</a></li>
+                            <li><a href="CAD.html">CAD</a></li>
+                            <li><a href="boat.html">Electrical/Mechanical</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="project_description">
+        <div class = "container">
+            <h1 class = "project-title"> ELECTRICALLY POWERED WATERCRAFT </h1>
+            <br>
+            <div class = "row">
+                <div class= "project-col-1">
+                    <h1 class = "project-sub-title"> Description </h1>
+                    <br>
+                        <p>The Promoting Electric Propulsion competition is put on by the United States Naval Academy. My team and I created an electrically powered watercraft that could complete 5 miles at a speed of 20mph. </p>
+                        <a href="boat_links/PEP_poster_2_FINAL.pdf" class="btn"> More Info </a>
+                        <a href="boat_links/PEP_Poster_3_dim.pdf" class="btn"> Full Diagram </a>
+                </div>
+                <div class = "project-col-2"> 
+                    <img src = "imgs/Boat/boat_diagram.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
