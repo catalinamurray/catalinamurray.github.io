@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class = "container">
+            <nav>
+                <img src = "imgs/logo2.png" alt="logo" class="logo">
+                <ul id = "sidemenu">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./courses.html">COURSEWORK</a></li>
+                    <li class="dropdown">
+                        <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                        <ul class="dropdown-content">
+                            <li><a href="PR.html">Pattern Recognition</a></li>
+                            <li><a href="ML.html">Machine Learning</a></li>
+                            <li><a href="NLP.html">NLP</a></li>
+                            <li><a href="robotics.html">Robotics</a></li>
+                            <li><a href="CAD.html">CAD</a></li>
+                            <li><a href="boat.html">Electrical/Mechanical</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+<!-- Classes -->
+<div id="services">
+    <div class = "container">
+        <h1 class = "sub-title"> RELATED COURSEWORK </h1>
+        <div class = "services-list">
+            <div>
+                <i class="fa-solid fa-diagram-project" style="color: #ff00c8;"></i>
+                <h2> Neural Networks and Deep Learning </h2>
+                <p> Nonlinear modeling and neural networks. Gradient descent learning in the additive neural model; statistical learning concepts; dynamic neural networks, function approximation and short-term memory; unsupervised learning networks; generative models and statistical representation; autonomous learning using cognitive principles. Importance and challenges of deep learning; applications for image, video, speech recognition. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-desktop" style="color: #ff00c8;"></i>
+                <h2> Applied Machine Learning Systems </h2>
+                <p> Utilizing Machine Learning in real-world scenarios. Use of Sci-kit Learn Libraries and TensorFlow. Some topics include dimensionality reduction, clustering methods, unsupervised learning and ANN architecture. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-camera" style="color: #7700ff;"></i>
+                <h2> Computational Photography </h2>
+                <p> Fundamentals of computational photography, sensing, imaging and illumination. Some of the topics include: Object for depth-edge detection, Stereo from Flicker, Light Transport, Dual photography, Depth from Focus/Defocus, and Plenoptic Cameras.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-face-smile-beam" style="color: #ff00c8;"></i>
+                <h2> Pattern Recognition </h2>
+                <p> Decision functions; optimum decision criteria; training algorithms; unsupervised learning; feature extraction, data reduction; potential functions; syntactic pattern description; recognition grammars; machine intelligence.</p>
+            </div> 
+            <div>
+                <i class="fa-brands fa-python" style="color: #ff00c8;"></i>
+                <h2> Fundamentals of Machine Learning </h2>
+                <p> Engineering and hardware concepts pertaining to design of intelligent computer systems. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-image" style="color: #7700ff;"></i>
+                <h2> Computer Vision </h2>
+                <p> Pictorial data representation; feature encoding; spatial filtering; image enhancement; image segmentation; cluster seeking; two-dimensional z-transforms; scene analysis; picture description language; object recognition; pictorial database; interactive graphics; picture understanding machine.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-wave-square" style="color: #7700ff;"></i>
+                <h2> Foundations of Digital Signal Processing </h2>
+                <p> Analysis and design of digital filters for discrete signal processing, spectral analysis, and fast Fourier transform. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-bolt" style="color: #ffae00;"></i>
+                <h2> VLSI Circuits and Technology  </h2>
+                <p> Introduction to VLSI circuit technology and manufacturing. Fabrication, device models, layout, parasitics, and simple gate circuits.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-chart-gantt" style="color: #ff00c8;"></i>
+                <h2> Statistical Models </h2>
+                <p> A foundational course in regression and data science. The course introduces data analysis through statistical computing in R, least-squares and logistic regression, model selection, and data visualization. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-cube" style="color: #005153;"></i>
+                <h2> 3D Modeling </h2>
+                <p> Advanced Computer Aided Design (CAD) for mechanical systems with consideration of material properties, stress analysis, and manufacturability. Includes design planning of additive and subtractive techniques for mechanical assemblies and civil applications using a variety of CAD software tools. </p>
+            </div> 
+            <div>
+                <i class = "fa-solid fa-desktop" style="color: #ff00c8;"></i>
+                <h2> Computational Modeling </h2>
+                <p> Fundamentals of computational problem solving tools (programming, systems modeling, numerical methods) for diverse engineering applications, with consideration of the economic and ethical outcomes of decisions that are made using such techniques. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-bolt" style="color: #ffae00;"></i>
+                <h2> Control Systems and Instrumentation </h2>
+                <p> Fundamentals of circuits and semiconductor electronics as applied to the analysis and design of engineering instrumentation and control systems. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-bolt" style="color: #ffae00;"></i>
+                <h2> Digital Electronics </h2>
+                <p> Design and hardware implementation of digital electronic systems using basic boolean logic gates and other common digital logic tools such as multiplexers, decoders, flip-flops, shift registers, and counters. With laboratory. </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-robot" style="color: #7700ff;"></i>
+                <h2> Mobile Robotics </h2>
+                <p> Introduction to mobile robotics, from hardware (energy, locomotion, sensors) and software (signal processing, control, localization, trajectory planning, high-level control). </p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-gear" style="color: #005153;"></i>
+                <h2> Materials and Mechanics </h2>
+                <p> Fundamentals of materials and mechanics (statics and dynamics) for engineering applications</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-fan" style="color: #005153;"></i>
+                <h2> Transport Phenomena </h2>
+                <p> An integrated course in the fundamentals of thermodynamics, fluid mechanics, and heat transfer with emphasis on principles of conservation and transport of mass, energy, and momentum.</p>
+            </div>  
+            <div>
+                <i class="fa-regular fa-building" style="color: #940000;"></i>
+                <h2> Structural Engineering</h2>
+                <p> An introduction to structural engineering systems and materials such as steel, wood, and concrete. Emphasis on understanding the load path within real structures and how that impacts their design.</p>
+            </div> 
+            <div>
+                <i class="fa-solid fa-briefcase" style="color: #555555;"></i>
+                <h2> Engineering Entrepreuneurship </h2>
+                <p> Introduction to entrepreneurship, idea generating and feasibility analysis, and business planning. Lectures, case studies, student-led discussions, team business plans, and investor presentations. </p>
+            </div> 
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+       sidemenu.style.right = "0";
+    }
+    function closemenu(){
+       sidemenu.style.right = "-200px";
+    }
+</script>
+
+</html>
