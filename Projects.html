@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class = "container">
+        <nav>
+            <img src = "imgs/logo2.png" alt="logo" class="logo">
+            <ul id = "sidemenu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="./courses.html">COURSEWORK</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">PROJECTS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="PR.html">Pattern Recognition</a></li>
+                        <li><a href="ML.html">Machine Learning</a></li>
+                        <li><a href="NLP.html">NLP</a></li>
+                        <li><a href="robotics.html">Robotics</a></li>
+                        <li><a href="CAD.html">CAD modeling</a></li>
+                        <li><a href="boat.html">Boat</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+
+<!-- ---------------Portfolio--------------- -->
+<div id="portfolio">
+    <div class = "container">
+        <h1 class = "sub-title"> My Work </h1>
+        <div class = "work-list">
+            <div class = "work">
+                <img src = "imgs/thumbnails/pattern.jpg" alt="image1">
+                <div class = "layer">
+                    <h3> Pattern Recognition</h3>
+                    <p> Detect fabric content using computer vision techniques. </p>
+                    <a href = "PR.html"<i class="fa-solid fa-arrow-up-right-from-square" style="color: #2273f3;"></i></a>
+                </div>
+            </div>
+
+            <div class = "work">
+                <img src = "imgs/thumbnails/ML.jpg" alt="image3">
+                <div class = "layer">
+                    <h3> ML </h3>
+                    <p> Various Machine Learning Projects using MLPs, ANNs, and CNNs. </p>
+                    <a href = "ML.html"<i class="fa-solid fa-arrow-up-right-from-square" style="color: #2273f3;"></i></a>
+                </div>
+            </div>
+
+            <div class = "work">
+                <img src = "imgs/thumbnails/robotics.jpg" alt="image2">
+                <div class = "layer">
+                    <h3> Robotics</h3>
+                    <p> Turtlebot4 applications, underwater robotic deployments, and the Romi robot. </p>
+                    <a href = "robotics.html"<i class="fa-solid fa-arrow-up-right-from-square" style="color:#2273f3;"></i></a>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "imgs/thumbnails/CAD.jpg" alt="image3">
+                <div class = "layer">
+                    <h3> CAD modeling</h3>
+                    <p> CAD modeleling, 3D printing, and engineering drawings. </p>
+                    <a href = "CAD.html"<i class="fa-solid fa-arrow-up-right-from-square" style="color: #2273f3;"></i></a>
+                </div>
+            </div>
+
+            <div class = "work">
+                <img src = "imgs/thumbnails/NLP.jpg" alt="image3">
+                <div class = "layer">
+                    <h3> NLP </h3>
+                    <p> Various NLP techniques utilized to perform topic modeling on aerospace related data. </p>
+                    <a href = "NLP.html"<i class="fa-solid fa-arrow-up-right-from-square" style="color: #2273f3;"></i></a>
+                </div>
+            </div>
+
+            <div class = "work">
+                <img src = "imgs/thumbnails/Boat.jpg" alt="image3">
+                <div class = "layer">
+                    <h3> BOAT</h3>
+                    <p> Designed and built electrically powered boat for the Promoting Electric Propulsion Competition. </p>
+                    <a href = "boat.html" <i class="fa-solid fa-arrow-up-right-from-square" style="color: #2273f3;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+     var sidemenu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+</script>
+
+</body>
+
+</html>
+
