@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+<div id="home">
+    <div class = "container">
+        <nav>
+            <img src = "imgs/logo2.png" alt="logo" class="logo">
+            <ul id = "sidemenu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="./courses.html">COURSEWORK</a></li>
+                <li class="dropdown">
+                    <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="PR.html">Pattern Recognition</a></li>
+                        <li><a href="ML.html">Machine Learning</a></li>
+                        <li><a href="NLP.html">NLP</a></li>
+                        <li><a href="robotics.html">Robotics</a></li>
+                        <li><a href="CAD.html">CAD</a></li>
+                        <li><a href="boat.html">Electrical/Mechanical</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACTS</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+        </nav>
+        <div class = "row">
+            <div class = "home-col-2">
+                <div class="header-text">
+                    <h1>CATALINA MURRAY</h1>
+                    <h2> Portfolio </h2>
+                    <p> Catalina is a Master's student at the <span> University of Florida</span> studying Electrical and Computer Engineering with and emphasis on <span> Machine Learning </span> and <span> Data Science </span> applications. </p>  
+                </div>
+            </div>
+            <div class = "home-col-1">
+                <img src = "imgs/Home.png" alt="bio img">
+            </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+     var sidemenu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+</script>
+
+</body>
+
+</html>
