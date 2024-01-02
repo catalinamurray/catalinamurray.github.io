@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content= "width=device-width, initial-scale = 1.0">
+    <title> Catalina Murray Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ddc54bf75e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class = "container">
+        <nav>
+            <img src = "imgs/logo2.png" alt="logo" class="logo">
+            <ul id = "sidemenu">
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="./courses.html">COURSEWORK</a></li>
+                <li class="dropdown">
+                    <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                    <ul class="dropdown-content">
+                        <li><a href="PR.html">Pattern Recognition</a></li>
+                        <li><a href="ML.html">Machine Learning</a></li>
+                        <li><a href="NLP.html">NLP</a></li>
+                        <li><a href="robotics.html">Robotics</a></li>
+                        <li><a href="CAD.html">CAD</a></li>
+                        <li><a href="boat.html">Electrical/Mechanical</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+        </nav>
+    </div>
+</div>
+
+<!-- --------------contact------------ -->
+<div id="contact">
+    <div class = "container">
+        <div class = "row">
+            <div class = "contact-left">
+                <h1 class = "sub-title"> Contact Me</h1>
+                <br>
+                <p><i class="fa-regular fa-paper-plane"></i>catalinamurray11@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>310.918.1899</p>
+                <div class = "social-icons">
+                    <a href=" https://www.linkedin.com/in/catalina-murray/"> <i class="fa-brands fa-linkedin" style="color: #2273f3;"></i>
+                    <a href="https://github.com/catalinamurray"> <i class="fa-brands fa-github" style="color: #2273f3;"></i></a>
+                </div>
+                <a href="Murray_Resume_2023.pdf" class="btn"> Download Resume </a>
+        </div>
+        <div class = "contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type ="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea></textarea>
+                <button type="submit" class="btn"> Submit</button>
+            </form>
+            <span id="msg"></span>
+        </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+     var sidemenu = document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0RzP8u-ncqPAXY9wAnMqiBOVKHSla-5-0KRCm5_NchyH78ueUs5X2aGDfZIahT4QPTg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 1000) 
+            form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
